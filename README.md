@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Notes
+
+The relevant urls, where you can see my actual work, once running locally:
+
+http://localhost:3000/provider/schedule
+http://localhost:3000/client/slots
+
+Required to run:
+
+- Node v16.19.1
+- Npm v8.19.3
+- Next v14.1.1
+
+In a real use case project, there would be authentication and all that jazz like permissions and roles etc. There would be persistent state, calls to API, some type of database that would be used as the source of truth. A lot more data checks etc You get the general idea. Just pointing out the obvious.
+
+UI was only developed for mobile. I did not account for desktop in any way (so if it looks decent it's by accident not on purpose or if it looks horrible, that's why). I chose Next.js because it's the easiest to set up and what is generally recommended by the React dev team these days. Would have used React Native, but it requires more things to setup, and time was limited. So I went for the quickest setup.
+
+It's written in Typescript, perhaps an overkill for a small project but since Typescript really is the standard these days, I went with it.
+
+Total of 2 screens, one for scheduling availability by a provider and one for reserving available times by a client (at least in concept).
+
+Again, all data is mocked, there are no actual API calls (not even faked calls).
+
+Nothing is persistently stored, except for default data (mockData.ts).
+
+Dynamic data is only stored via useState. Technically any added dynamic data entered is saved into memory, but it is not persisted (no context or global state is used, just to save time, simplify, and limit the project -- didn't want to over-complicate the whole thing) and thus the data is not actually connected or related relative to each screen. Really it's just mimicking functionality, so basically what a user would expect in terms of interacting with the UI state, is all. The basics.
+
+I would have liked to created re-usable components, but again to save time, I just limited to what appears in each page. But in a real world project, you want to use re-usable components, in order to really take advantage of the power of react or react-native.
 
 ## Getting Started
 
