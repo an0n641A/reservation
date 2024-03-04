@@ -2,9 +2,9 @@
 
 The relevant urls, where you can see my actual work, once running locally:
 
-http://localhost:3000/provider/schedule
+- http://localhost:3000/provider/schedule
 
-http://localhost:3000/client/slots
+- http://localhost:3000/client/slots
 
 Required to run:
 
