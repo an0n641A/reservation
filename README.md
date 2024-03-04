@@ -3,6 +3,7 @@
 The relevant urls, where you can see my actual work, once running locally:
 
 http://localhost:3000/provider/schedule
+
 http://localhost:3000/client/slots
 
 Required to run:
@@ -10,6 +11,8 @@ Required to run:
 - Node v16.19.1
 - Npm v8.19.3
 - Next v14.1.1
+
+Off the bat: the 15m time slot was not accounted for, instead just the entire available time slots were implemented to book. Nor was the expire after 30 minute functionality or the 24 hours in advance rule. It would have taken up more time, and required more precise and refined checks and functionality. But the overall general design and expectation is there, just not to that micro level, in this initial iteration, but in theory it could be more refined and accounted for. Just kept things simple, for a limited timed implementation.
 
 In a real use case project, there would be authentication and all that jazz like permissions and roles etc. There would be persistent state, calls to API, some type of database that would be used as the source of truth. A lot more data checks etc You get the general idea. Just pointing out the obvious.
 
